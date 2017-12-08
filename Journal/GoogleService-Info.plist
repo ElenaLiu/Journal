@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>631819958071-2onbjvcfvge8me9dle4r6clablef146a.apps.googleusercontent.com</string>
+	<string>519525150446-u2dtjcdl77rn9d33e8omv2k3pir4b77p.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.631819958071-2onbjvcfvge8me9dle4r6clablef146a</string>
+	<string>com.googleusercontent.apps.519525150446-u2dtjcdl77rn9d33e8omv2k3pir4b77p</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCehqJHkyTXDUuwlpgnOcxQQ7OagLI_1dI</string>
+	<string>AIzaSyCiTz2SpOvLCsIKdftCwQZk_lu-mAJ7tkE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>631819958071</string>
+	<string>519525150446</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.AiBeaRCiao.patissier</string>
+	<string>com.wawaliu.Journal</string>
 	<key>PROJECT_ID</key>
-	<string>patissiercowork</string>
+	<string>my-project-1512028198010</string>
 	<key>STORAGE_BUCKET</key>
-	<string>patissiercowork.appspot.com</string>
+	<string>my-project-1512028198010.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:631819958071:ios:b4049c61971c8424</string>
+	<string>1:519525150446:ios:86b1f65c55b86c2a</string>
 	<key>DATABASE_URL</key>
-	<string>https://patissiercowork.firebaseio.com</string>
+	<string>https://my-project-1512028198010.firebaseio.com</string>
 </dict>
 </plist>

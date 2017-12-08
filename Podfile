@@ -8,5 +8,6 @@ target 'Journal' do
   # Pods for Journal
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
 end

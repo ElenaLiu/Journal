@@ -16,7 +16,7 @@
 		AC41B6F31FDA251800E01C62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC41B6F11FDA251800E01C62 /* LaunchScreen.storyboard */; };
 		AC41B6FB1FDA30E600E01C62 /* MainPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41B6FA1FDA30E600E01C62 /* MainPageTableViewController.swift */; };
 		AC41B6FD1FDA38EE00E01C62 /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41B6FC1FDA38EE00E01C62 /* MainPageTableViewCell.swift */; };
-		AC41B7071FDA541C00E01C62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC41B7061FDA541C00E01C62 /* GoogleService-Info.plist */; };
+		AC41B7091FDA736A00E01C62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC41B7081FDA736A00E01C62 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		AC41B6F41FDA251800E01C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC41B6FA1FDA30E600E01C62 /* MainPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewController.swift; sourceTree = "<group>"; };
 		AC41B6FC1FDA38EE00E01C62 /* MainPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewCell.swift; sourceTree = "<group>"; };
-		AC41B7061FDA541C00E01C62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC41B7081FDA736A00E01C62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F60154B2705D8ADA91429995 /* Pods_Journal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Journal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,9 +91,9 @@
 				AC41B6FC1FDA38EE00E01C62 /* MainPageTableViewCell.swift */,
 				AC41B6E71FDA251800E01C62 /* ViewController.swift */,
 				AC41B6E91FDA251800E01C62 /* Main.storyboard */,
-				AC41B7061FDA541C00E01C62 /* GoogleService-Info.plist */,
 				AC41B6EF1FDA251800E01C62 /* Assets.xcassets */,
 				AC41B6F11FDA251800E01C62 /* LaunchScreen.storyboard */,
+				AC41B7081FDA736A00E01C62 /* GoogleService-Info.plist */,
 				AC41B6F41FDA251800E01C62 /* Info.plist */,
 				AC41B6EC1FDA251800E01C62 /* Journal.xcdatamodeld */,
 			);
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC41B6F31FDA251800E01C62 /* LaunchScreen.storyboard in Resources */,
-				AC41B7071FDA541C00E01C62 /* GoogleService-Info.plist in Resources */,
+				AC41B7091FDA736A00E01C62 /* GoogleService-Info.plist in Resources */,
 				AC41B6F01FDA251800E01C62 /* Assets.xcassets in Resources */,
 				AC41B6EB1FDA251800E01C62 /* Main.storyboard in Resources */,
 			);
@@ -212,12 +212,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Journal/Pods-Journal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",

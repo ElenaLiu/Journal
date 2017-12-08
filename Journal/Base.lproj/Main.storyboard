@@ -77,6 +77,10 @@
                                         <constraint firstAttribute="trailing" secondItem="gjY-XE-X7D" secondAttribute="trailing" constant="20" id="jyn-Lg-foS"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mainPageImageView" destination="gjY-XE-X7D" id="wnZ-JQ-R3d"/>
+                                    <outlet property="mainPageTitleLabel" destination="MeE-Zs-O2w" id="KnL-yo-60e"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -86,9 +90,6 @@
                     </tableView>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="receivingTitleLabel" destination="MeE-Zs-O2w" id="YsO-PT-Rqw"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="du2-HH-fo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wtA-mB-fRx" userLabel="Exit" sceneMemberID="exit"/>

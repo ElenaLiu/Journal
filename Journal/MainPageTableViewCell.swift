@@ -10,6 +10,9 @@ import UIKit
 
 class MainPageTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var mainPageImageView: UIImageView!
+    
+    @IBOutlet weak var mainPageTitleLabel: UILabel!
     
     
     override func awakeFromNib() {
