@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class MainPageTableViewController: UITableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-     
+    @IBOutlet weak var receivingTitleLabel: UILabel!
+    
+    var titleArray = [""]
+    
+    func userDidPost(data: Any) {
+        receivingTitleLabel.text = data as? String
     }
 
 

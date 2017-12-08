@@ -14,6 +14,8 @@ protocol AddPostDelegate: class {
     }
 
 class ViewController: UIViewController {
+    
+    weak var delegate: AddPostDelegate?
 
     @IBOutlet weak var addPostImageView: UIImageView!
     
@@ -21,15 +23,61 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var addContentField: UITextView!
     
-    @IBOutlet weak var addSavePostButton: UIButton!
+    
+    @IBAction func addSavePostButton(_ sender: UIButton) {
+        if delegate != nil {
+            if (addTitleField.text != nil), addContentField.text != nil {
+                let data = addTitleField.text
+                delegate?.userEditingPost(data: data!)
+                dismiss(animated: true, completion: nil)
+            }
+        }
+    }
     
     @IBOutlet weak var addButton: UIButton!
     
+    
+    let picker = UIImagePickerController()
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       
        
+    }
+    
+    func setUpPickPhotoFromGallary()
+    {
+        
+        // 設定影像來源 這裡設定為相簿
+        picker.sourceType = .photoLibrary
+        // 設置 delegate
+        picker.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        // 設定選完照片後可以編輯
+        picker.allowsEditing = true
+        // 顯示相簿
+        self.present(self.picker, animated: true, completion: nil)
+        
+    }
+    
+    // 取得選取後的照片
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        
+        picker.dismiss(animated: true, completion: nil) // 關掉
+        self.addPostImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage // 從Dictionary取出原始圖檔
+        self.addPostImageView.contentMode = .scaleAspectFit
+        
+        
+    }
+    
+    // 圖片picker控制器任務結束回呼
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        
+        picker.dismiss(animated: true, completion: nil)
+        
     }
 
 }
