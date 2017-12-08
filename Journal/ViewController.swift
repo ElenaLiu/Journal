@@ -7,19 +7,32 @@
 //
 
 import UIKit
+import CoreData
+
+protocol AddPostDelegate: class {
+    func userEditingPost(data: Any)
+    }
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var addPostImageView: UIImageView!
+    
+    @IBOutlet weak var addTitleField: UITextField!
+    
+    @IBOutlet weak var addContentField: UITextView!
+    
+    @IBOutlet weak var addSavePostButton: UIButton!
+    
+    @IBOutlet weak var addButton: UIButton!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
+       
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
+
+
 

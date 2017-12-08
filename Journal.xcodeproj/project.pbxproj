@@ -13,6 +13,8 @@
 		AC41B6EE1FDA251800E01C62 /* Journal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC41B6EC1FDA251800E01C62 /* Journal.xcdatamodeld */; };
 		AC41B6F01FDA251800E01C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC41B6EF1FDA251800E01C62 /* Assets.xcassets */; };
 		AC41B6F31FDA251800E01C62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC41B6F11FDA251800E01C62 /* LaunchScreen.storyboard */; };
+		AC41B6FB1FDA30E600E01C62 /* MainPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41B6FA1FDA30E600E01C62 /* MainPageTableViewController.swift */; };
+		AC41B6FD1FDA38EE00E01C62 /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41B6FC1FDA38EE00E01C62 /* MainPageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AC41B6EF1FDA251800E01C62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC41B6F21FDA251800E01C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC41B6F41FDA251800E01C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC41B6FA1FDA30E600E01C62 /* MainPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewController.swift; sourceTree = "<group>"; };
+		AC41B6FC1FDA38EE00E01C62 /* MainPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				AC41B6E51FDA251800E01C62 /* AppDelegate.swift */,
+				AC41B6FA1FDA30E600E01C62 /* MainPageTableViewController.swift */,
+				AC41B6FC1FDA38EE00E01C62 /* MainPageTableViewCell.swift */,
 				AC41B6E71FDA251800E01C62 /* ViewController.swift */,
 				AC41B6E91FDA251800E01C62 /* Main.storyboard */,
 				AC41B6EF1FDA251800E01C62 /* Assets.xcassets */,
@@ -141,7 +147,9 @@
 			files = (
 				AC41B6EE1FDA251800E01C62 /* Journal.xcdatamodeld in Sources */,
 				AC41B6E81FDA251800E01C62 /* ViewController.swift in Sources */,
+				AC41B6FD1FDA38EE00E01C62 /* MainPageTableViewCell.swift in Sources */,
 				AC41B6E61FDA251800E01C62 /* AppDelegate.swift in Sources */,
+				AC41B6FB1FDA30E600E01C62 /* MainPageTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
