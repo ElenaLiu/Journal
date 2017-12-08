@@ -14,7 +14,7 @@
         <!--Main Page Table View Controller-->
         <scene sceneID="vAV-x9-jzu">
             <objects>
-                <tableViewController id="CPV-2S-nVG" customClass="MainPageTableViewController" customModule="Journal" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MainPageTableViewController" id="CPV-2S-nVG" customClass="MainPageTableViewController" customModule="Journal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sQo-rZ-9Oa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                                     <state key="normal" title="Button" image="plus-symbol"/>
                                     <connections>
                                         <action selector="addPostButton:" destination="wtA-mB-fRx" eventType="touchUpInside" id="XwX-mY-Ui2"/>
-                                        <segue destination="BYZ-38-t0r" kind="show" id="9za-0a-dw9"/>
+                                        <segue destination="BYZ-38-t0r" kind="show" id="Hos-7s-heb"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -89,6 +89,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="GjJ-15-6GW"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="du2-HH-fo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -171,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800.79999999999995" y="61.619190404797607"/>
+            <point key="canvasLocation" x="1193" y="61"/>
         </scene>
     </scenes>
     <resources>

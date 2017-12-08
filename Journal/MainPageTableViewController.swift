@@ -8,17 +8,19 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseStorage
 
 
 class MainPageTableViewController: UITableViewController {
     
     var fireUploadDic: [String:Any]?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let databaseRef = Database.database().reference().child("UserPostImage")
+        let databaseRef = Database.database().reference().child("UserPostImage").child("posts")
         
-        databaseRef.observe(.value, with: { [weak self] (snapshot) in
+            databaseRef.observe(.value, with: { [weak self] (snapshot) in
             
             if let uploadDataDic = snapshot.value as? [String:Any] {
                 
@@ -58,17 +60,24 @@ class MainPageTableViewController: UITableViewController {
             if let imageUrlString = dataDic[keyArray[indexPath.row]] as? String {
                 if let imageUrl = URL(string: imageUrlString) {
                     
-                    URLSession.shared.dataTask(with: imageUrl, completionHandler: { (data, response, error) in
+                    URLSession.shared.dataTask(with: imageUrl,
+                                               completionHandler:
+                        {
+                            (data, response, error) in
                         
-                        if error != nil {
+                        if error != nil
+                            
+                        {
                             
                             print("Download Image Task Fail: \(error!.localizedDescription)")
                         }
-                        else if let imageData = data {
+                        else if let imageData = data,
+                                let textData = data{
                             
                             DispatchQueue.main.async {
                                 
                                 cell?.mainPageImageView.image = UIImage(data: imageData)
+//                                cell?.mainPageTitleLabel.text = UILabel(data: textData)
                             }
                         }
                         
